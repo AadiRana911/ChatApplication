@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="202.0" prefWidth="319.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginPageController">
+   <children>
+      <Label layoutX="14.0" layoutY="83.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="102.0" layoutY="84.0" prefHeight="35.0" prefWidth="193.0" />
+      <Button fx:id="loginButton" layoutX="208.0" layoutY="129.0" mnemonicParsing="false" onAction="#enterChatroom" text="Enter Chatroom" />
+   </children>
+</AnchorPane>
