@@ -29,9 +29,8 @@ public class ServerConnection extends Thread{
     public void run() {
         try {
                 String serverResponse = in.readLine();
-//                if (serverResponse == null) break;
-
-                messageScreen.appendText(serverResponse + "\n");
+                if (!serverResponse.equals(""))
+                    messageScreen.appendText("\n" + serverResponse);
         } catch (IOException e) {
             e.printStackTrace();
         }finally {

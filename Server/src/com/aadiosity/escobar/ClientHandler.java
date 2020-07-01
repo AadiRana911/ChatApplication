@@ -24,7 +24,6 @@ public class ClientHandler extends Thread {
     public void run() {
         try {
             System.out.println(socket.getInetAddress() + "Connected\n");
-            outToAll("Welcome to the Chat room ^_^\n");
             while (true){
                 String request = in.readLine();
                 outToAll(request);
